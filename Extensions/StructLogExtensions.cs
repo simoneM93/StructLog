@@ -20,5 +20,8 @@ namespace StructLog.Extensions
 
             return services;
         }
+
+        public static IServiceCollection AddStructLog(this IServiceCollection services) =>
+            services.AddStructLog(new ConfigurationBuilder().Build());
     }
 }
