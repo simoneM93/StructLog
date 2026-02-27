@@ -6,7 +6,7 @@ using System.Text.Json;
 
 namespace StructLog
 {
-    public class StructuredLogger<T>(
+    public class StructLog<T>(
         ILogger<T> logger,
         IOptions<StructLogOptions> options,
         IEnumerable<ILogEnricher> enrichers) : IStructLog<T> where T : class

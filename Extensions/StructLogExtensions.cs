@@ -15,7 +15,7 @@ namespace StructLog.Extensions
 
             services.Configure<StructLogOptions>(configuration.GetSection("StructLog"));
 
-            services.AddScoped(typeof(IStructLog<>), typeof(StructuredLogger<>));
+            services.AddScoped(typeof(IStructLog<>), typeof(StructLog<>));
             services.AddSingleton<ILogEnricher, MachineNameEnricher>();
 
             return services;
