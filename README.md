@@ -12,7 +12,7 @@ A modern structured logging library for .NET with support for custom enrichers, 
 - ⚡ **Custom Enrichers** support (```ILogEnricher```)
 - 📝 **Configurable options** via ```appsettings.json```
 - 🖥️ **Works** in Console, Worker, and ASP.NET Core apps
-- 
+
 ## 📋 Requirements
 
 | Requirement | Minimum Version |
