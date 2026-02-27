@@ -1,6 +1,7 @@
 # StructLog
 
 [![NuGet](https://img.shields.io/nuget/v/StructLog.svg)](https://www.nuget.org/packages/StructLog)
+[![Publish to NuGet](https://github.com/simoneM93/StructLog/actions/workflows/publish.yml/badge.svg)](https://github.com/simoneM93/StructLog/actions/workflows/publish.yml)
 
 A modern structured logging library for .NET with support for custom enrichers, JSON logging, and full Dependency Injection integration.
 
