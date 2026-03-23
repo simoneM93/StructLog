@@ -53,5 +53,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[1.1.0]: https://github.com/simoneM93/StructLog/compare/v1.0.0...HEAD
+[1.1.0]: https://github.com/simoneM93/StructLog/compare/v1.1.0...HEAD
 [1.0.0]: https://github.com/simoneM93/StructLog/releases/tag/v1.0.0
