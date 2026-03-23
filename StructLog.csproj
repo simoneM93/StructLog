@@ -1,42 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
-	  <IsPackable>true</IsPackable>
-	  <PackageId>StructLog</PackageId>
-	  <Authors>Simone Marano</Authors>
-	  <Description>A modern structured logging library for .NET with support for custom enrichers, JSON logging, and full Dependency Injection integration.</Description>
-	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <PackageTags>logging;structured-logging;json-logging;enricher;aspnetcore;dotnet;dependency-injection;ilogger;eventcode;serilog-alternative</PackageTags>
-	  <RepositoryUrl>https://github.com/simoneM93/StructLog</RepositoryUrl>
-	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <PackageReleaseNotes>See CHANGELOG.md for details on what's new in this release.</PackageReleaseNotes>
-  </PropertyGroup>
+		<IsPackable>true</IsPackable>
+		<PackageId>StructLog</PackageId>
+		<Authors>Simone Marano</Authors>
+		<Description>A modern structured logging library for .NET with support for custom enrichers, JSON logging, and full Dependency Injection integration.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>logging;structured-logging;json-logging;enricher;aspnetcore;dotnet;dependency-injection;ilogger;eventcode;serilog-alternative</PackageTags>
+		<RepositoryUrl>https://github.com/simoneM93/StructLog</RepositoryUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>See CHANGELOG.md for details on what's new in this release.</PackageReleaseNotes>
+		<Version>1.1.0</Version>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="CHANGELOG.md" />
-    <None Remove="README.md" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="CHANGELOG.md" />
+		<None Remove="README.md" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="CHANGELOG.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="README.md" Pack="true" PackagePath="">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="CHANGELOG.md">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="README.md" Pack="true" PackagePath="">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.3" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.3" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.3" />
+	</ItemGroup>
 
 </Project>
