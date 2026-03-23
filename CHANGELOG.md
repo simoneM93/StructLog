@@ -19,7 +19,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Explicit null checks on all constructor parameters
 - `sealed record LogEntry` to replace anonymous type for log entry serialization
 - XML documentation on `BeginScope` to document the `IDisposable` contract
-- Unit test suite (`StructLog.Tests`) using xUnit and Moq
 
 ### Changed
 - `JsonSerializerOptions` moved to a `static readonly` field — previously a new instance was allocated on every log call
